@@ -33,4 +33,10 @@ public class UserControllerTest {
         mockMvc.perform(get("/user/1001"));
     }
 
+    @Test
+    public void getByName() throws Exception {
+        mockMvc.perform(get("/user/getByName")
+                .param("name", "Tom"));
+    }
+
 }

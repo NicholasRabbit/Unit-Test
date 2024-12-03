@@ -22,4 +22,11 @@ public class UserController {
         return "Tom";
     }
 
+    @GetMapping(value = "/getByName")
+    @ResponseBody
+    public String getByName(String name, HttpServletResponse response) {
+        response.setContentType("application/json;charset=UTF-8");
+        return name;
+    }
+
 }
