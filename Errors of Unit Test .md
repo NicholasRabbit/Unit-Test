@@ -48,9 +48,10 @@ In "Shorten command line" select JAR manifest.
 
 * **Reason:**
 
- * !!! How stupid I was. The exception stated clearly that there is no "CollectionFactory" which is 
+  How stupid I was! The exception indicated clearly that there is no "CollectionFactory" which is 
 
-   a class of Spring Core. Just import the dependency!!
+  a class of Spring Core. Just import the dependency!!
+
 
 ```xml
             <dependency>
